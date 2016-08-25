@@ -52,10 +52,14 @@ a:hover{
 html,
 body {
   width: 100%;
-  background-color: #1d1919;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body {
   color: #ffffff;
+  position: relative;
+  background-color: #1d1919;
   text-align: center;
   text-shadow: none;
   font-family: proxima-nova, 'Gotham SSm A','Gotham SSm B','Gotham SSm','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -63,89 +67,33 @@ body {
   font-size: 15px;
   line-height: 2.2em;
   letter-spacing: 0.03em;
-  margin-bottom: -60px;
-  height: 100%;
-  position: relative;
   /*overflow: hidden; */ /*prevents scrolling*/
 }
 
+
+
+/*to make the footer work!*/
+.body-wrapper{
+	height: 100%;
+	min-height:100%;
+	position:relative;
+}
+
+
+
+
+/*decorative site background*/
 .background-main {    
   background-image: url(../Images/background_home.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
   background-size: cover;
-  }
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
   height: 100%;
-/*  height: 100%; *//* For at least Firefox */
-/*  min-height: 1000px;*/
-  min-height: 100%;
-  padding-top: 150px;  
-  margin-bottom: 0;
-
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
-}
-
-
-/*
- * Default Template Header
- */
-/*.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-      background-color: rgba(29,25,25,.8);
-}
-
-.masthead-nav > li {
-  display: inline-block;
-      background-color: rgba(29,25,25,.8);
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #bbbbbb; /* IE8 proofing */
- /* color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #23e1f6;
-  border-bottom-color: #23e1f6;
-}
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
+  min-height:100%;
   }
-  .masthead-nav {
-    float: right;
-  }
-}*/
+
+
 
 
 
@@ -274,12 +222,58 @@ background-image: ./Images/background_home.jpg;
 
 
 
+  
+/* CUSTOMIZE THE CONTENT
+-------------------------------------------------- */  
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;  
+/*  height: 100%; *//* For at least Firefox */
+/*  min-height: 1000px;*/
+  padding-top: 150px;  
+  /* margin-bottom: 0; */
+  padding-bottom:-60px; /* Height of the footer element */
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+/* Padding for spacing */
+.inner {
+  padding: 10%;
+}
+
 
 
 /*
  * Cover
  */
 
+ 
+ .cover-container {
+    padding-top: 10%;
+    padding-bottom: 30%;
+padding-left: 0;
+    padding-right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+margin-bottom: 0;
+      height: 100%;
+      min-height: 100%;
+    overflow: hidden;
+    max-height: 500px;
+}
+ 
+ 
+ 
 .cover {
     padding-top: 10%;
     padding-right: 0;
@@ -289,8 +283,6 @@ background-image: ./Images/background_home.jpg;
     text-shadow: none;
     width: 100%;
 
-
-
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -298,19 +290,7 @@ background-image: ./Images/background_home.jpg;
 }
 
 
-.cover-container {
-    padding-top: 10%;
-    padding-bottom: 10%;
-/*    margin-bottom: 20%;
-    padding-left: 10%;
-    padding-right: 10%;*/
-  margin-right: auto;
-  margin-left: auto;
-      height: 100%;
-      min-height: 100%;
-    overflow: hidden;
-    max-height: 500px;
-}
+
 
 
 
@@ -735,35 +715,22 @@ padding-top:40%;
  * Footer
  */
 
-/*.mastfoot-custom {
-  color: #fff; /* IE8 proofing */
-  /*color: rgba(255,255,255,1);
-  background-color: rgba(29,25,25,1);
-  width:100%;
-    position: absolute;
-
-}
-*/
 
 .footer {
+  position: relative;  /*for some reason absolute isn't working and instead is acting as fixed*/
   bottom: 0;
   width: 100%;
-  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #ffffff;
+  height: 60px;	/* Set the fixed height of the footer here */
+  background-color: rgba(29,25,25,.9);
   border-top-color: #ffffff;
   border-top-width: 1px;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: rgba(29,25,25,.9);
-  /*background-image: url(../Images/ib_footer.png);*/
-/*  background-repeat: no-repeat;*/
-/*  background-attachment: fixed;*/
-  background-width:100%;
   display: table;
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
   font-size: 12px;
   text-decoration: none;
   text-shadow:none;
-  position: relative;
+
 }
 
 
