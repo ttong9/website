@@ -1,0 +1,707 @@
+/*
+ * Globals
+ */
+
+
+
+
+ /* Colors */
+/*dark grey #1d1919
+light grey #bbbbbb
+bright blue #23e1f6
+bright pink #da25cb
+navy #002b3c
+mid grey #515356
+off white #f6f6f6*/
+
+
+
+/* Links */
+a{
+  color: #ffffff;
+}
+
+
+a:focus,
+a:hover{
+  color: #23e1f6;
+  text-decoration: none;
+
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover{
+    color: #ffffff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #1d1919;
+  border: 1px solid #ffffff;
+}
+.btn-default:focus {
+  color: #23e1f6;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #1d1919;
+  border: 1px solid #ffffff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #ffffff;
+  position: relative;
+  background-color: #1d1919;
+  text-align: center;
+  text-shadow: none;
+  font-family: proxima-nova, 'Gotham SSm A','Gotham SSm B','Gotham SSm','Proxima Nova','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 2.2em;
+  letter-spacing: 0.03em;
+  /*overflow: hidden; */ /*prevents scrolling*/
+}
+
+
+
+/*to make the footer work!*/
+.body-wrapper{
+	height: 100%;
+	min-height:100%;
+	position:relative;
+}
+
+
+
+
+/*decorative site background*/
+.background-main {    
+  background-image: url(http://chroniclesofatraveler.com/Images/background_home.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  min-height:100%;
+  }
+
+
+  
+/* CUSTOMIZE THE CONTENT
+-------------------------------------------------- */  
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;  
+/*  height: 100%; *//* For at least Firefox */
+/*  min-height: 1000px;*/
+  padding-top: 150px;  
+  /* margin-bottom: 0; */
+  padding-bottom:-60px; /* Height of the footer element */
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+/* Padding for spacing */
+.inner {
+  padding: 10%;
+}
+
+
+
+/*
+ * Cover
+ */
+
+ 
+ .cover-container {
+    padding-top: 10%;
+    padding-bottom: 30%;
+padding-left: 0;
+    padding-right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+margin-bottom: 0;
+      height: 100%;
+      min-height: 100%;
+    overflow: hidden;
+    max-height: 500px;
+}
+ 
+ 
+ 
+.cover {
+    padding-top: 10%;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: rgba(29,25,25,.3);
+    font-family: proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: none;
+    width: 100%;
+
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/*
+ * Portfolio Portal/Menu Links
+ */
+
+
+.portal-container {
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+
+
+.portal-portfolio{
+    padding-right: 0px;
+    padding-left: 0px;
+    min-height: 700px;
+    width: 100%;
+    background-color: rgba(29,25,25);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed; /*gives the transition effect*/
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.portal-portfolio-africa{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_africa.jpg);
+}
+
+.portal-portfolio-asia{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_asia.jpg);
+}
+
+.portal-portfolio-america{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_america.jpg);
+}
+
+.portal-portfolio-europe{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_europe.jpg);
+}
+
+.portal-portfolio-iphone{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_iphone.jpg);
+}
+
+.portal-portfolio-mideast{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_mideast.jpg);
+}
+.portal-portfolio:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+
+}
+
+
+
+.portal-portfolio > a{
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+/*.portal-portfolio > a:hover,
+.portal-portfolio > a:focus{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+*/
+
+.portal-portfolio > a:hover span,
+.portal-portfolio > a:focus span{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+
+.portal-portfolio .portal-heading > a,
+.portal-container > a{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+/*  vertical-align: middle;*/
+padding-top:40%;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.portal-container > a:hover,
+.portal-container > a:focus,
+.portal-portfolio .portal-heading > a:hover,
+.portal-portfolio .portal-heading > a:focus{
+  color: #23e1f6;
+  text-decoration: none;
+  border-bottom: none;
+  text-shadow: none;
+}
+
+
+
+
+
+/*
+ * Photo Gallery Layout
+ */
+
+
+.gallery-container {
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+      background-color: rgba(29,25,25,1);
+}
+
+.gallery-container-heading{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 6vw;		  /* for short ones, 152px is nice; squarespace: 52px */
+  text-align: center;
+  padding-top: 0;
+  height: 300px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.gallery-image-wrapper{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    background-color: rgba(29,25,25,1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+	 /* overflow-x: scroll;*/
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.gallery-image{
+  width: 100%;
+    background-color: rgba(25,25,25,1);
+}
+
+
+
+.gallery-image-caption{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-weight: normal;
+   font-style: narrow;
+  font-size: 20px;
+  padding-top:10px;
+  padding-bottom: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.2em;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-shadow: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * Project Portal/Menu Links
+ */
+
+
+
+.portal-project{
+    padding-right: 0px;
+    padding-left: 0px;
+    min-height: 700px;
+    width: 100%;
+    background-color: rgba(29,25,25);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+
+.portal-project-cted{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_cted.jpg);
+}
+
+.portal-project-tdr{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_tdr.jpg);
+}
+
+.portal-project-step{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_step.jpg);
+}
+
+.portal-project-soul{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_soul.jpg);
+}
+
+.portal-project-unido{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_unido.jpg);
+}
+
+.portal-project-usami{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_usami.jpg);
+}
+
+.portal-project-publications{
+    background-image: url(http://chroniclesofatraveler.com/Images/ib_publications.jpg);
+}
+
+
+
+.portal-project:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+.portal-project > a{
+    opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+.portal-project > a:hover,
+.portal-project > a:focus{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+
+.portal-project .portal-heading > a{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.portal-project .portal-heading > a:hover,
+.portal-project .portal-heading > a:focus{
+  color: #23e1f6;
+  text-decoration: none;
+  border-bottom: none;
+  text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+ * Project Layout
+ */
+
+
+.project-container {
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+      background-color: rgba(29,25,25,1);
+}
+
+.project-container-heading{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 5.8vw;     /* for short ones, 152px is nice; squarespace: 52px */
+  text-align: center;
+  padding-top: 0;
+  height: 300px;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+
+.project-body-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+
+
+}
+
+.project-body-heading{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 2vw;     /* 25px is also nice */
+  text-align: center;
+  padding-top: 0;
+  line-height: 2.2em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.project-body-text-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+.project-body-text-heading{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.5vw;     /* 20px is also nice */
+  text-align: center;
+  padding-top: 0;
+  line-height: 2.2em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.project-body-text{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.3vw;     /* 15px is also nice */
+  text-align: justify;
+  padding-top: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 2.4em;
+  letter-spacing: 0.07em;
+  text-transform: none;
+  color: #bbbbbb;
+  text-shadow: none;
+}
+
+
+
+
+.project-image-wrapper{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    background-color: rgba(29,25,25,1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+   /* overflow-x: scroll;*/
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+.project-image{
+  width: 100%;
+/*    background-color: rgba(29,25,25,1);*/
+}
+.project-image-small{
+  padding-left:30%;
+  padding-right:30%;
+/*    background-color: rgba(29,25,25,1);*/
+
+}
+
+
+
+.project-image-caption{
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-weight: normal;
+   font-style: narrow;
+  font-size: 1vw;     /* 15px is also nice */
+  padding-top:10px;
+  padding-bottom: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2.2em;
+  letter-spacing: 0.1em;
+  color: #bbbbbb;
+  text-shadow: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ * Footer
+ */
+
+
+.footer {
+  position: relative;  /*for some reason absolute isn't working and instead is acting as fixed*/
+  bottom: 0;
+  width: 100%;
+  height: 60px;	/* Set the fixed height of the footer here */
+  background-color: rgba(29,25,25,.9);
+  border-top-color: #ffffff;
+  border-top-width: 1px;
+  display: table;
+  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  text-shadow:none;
+
+}
+
+
+.footer .copyright{
+  display: table-cell;
+  position: left;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 10px;
+  width: 25%;
+}
+
+.footer .quote{
+  display: table-cell;
+  position: middle;
+  text-align: center;
+  width: 50%;
+  vertical-align: middle;
+  padding-left:5px;
+  padding-right:5px;
+
+}
+
+.footer .nav{
+  display: table-cell;
+  position: right;
+  text-align: right;
+  vertical-align: middle;
+  padding-right:10px;
+  width: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot{
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot {
+    width: 700px;
+  }
+
+    .cover-container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
