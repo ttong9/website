@@ -84,7 +84,7 @@ body {
 
 /*decorative site background*/
 .background-main {    
-  background-image: url(http://chroniclesofatraveler.com/Images/background_home.jpg);
+  background-image: url(Images/background_home.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
@@ -198,27 +198,27 @@ margin-bottom: 0;
 
 
 .portal-portfolio-africa{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_africa.jpg);
+    background-image: url(Images/ib_africa.jpg);
 }
 
 .portal-portfolio-asia{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_asia.jpg);
+    background-image: url(Images/ib_asia.jpg);
 }
 
 .portal-portfolio-america{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_america.jpg);
+    background-image: url(Images/ib_america.jpg);
 }
 
 .portal-portfolio-europe{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_europe.jpg);
+    background-image: url(Images/ib_europe.jpg);
 }
 
 .portal-portfolio-iphone{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_iphone.jpg);
+    background-image: url(Images/ib_iphone.jpg);
 }
 
 .portal-portfolio-mideast{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_mideast.jpg);
+    background-image: url(Images/ib_mideast.jpg);
 }
 .portal-portfolio:hover {
     opacity: 1;
@@ -370,31 +370,31 @@ padding-top:40%;
 
 
 .portal-project-cted{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_cted.jpg);
+    background-image: url(Images/ib_cted.jpg);
 }
 
 .portal-project-tdr{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_tdr.jpg);
+    background-image: url(Images/ib_tdr.jpg);
 }
 
 .portal-project-step{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_step.jpg);
+    background-image: url(Images/ib_step.jpg);
 }
 
 .portal-project-soul{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_soul.jpg);
+    background-image: url(Images/ib_soul.jpg);
 }
 
 .portal-project-unido{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_unido.jpg);
+    background-image: url(Images/ib_unido.jpg);
 }
 
 .portal-project-usami{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_usami.jpg);
+    background-image: url(Images/ib_usami.jpg);
 }
 
 .portal-project-publications{
-    background-image: url(http://chroniclesofatraveler.com/Images/ib_publications.jpg);
+    background-image: url(Images/ib_publications.jpg);
 }
 
 
