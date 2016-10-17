@@ -508,7 +508,6 @@ padding-top:40%;
   padding-top: 0;
   line-height: 2.2em;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: #ffffff;
   text-shadow: none;
 }
@@ -628,11 +627,11 @@ padding-top:40%;
 
 .footer .nav{
   display: table-cell;
-  position: right;
+  float: right;
   text-align: right;
   vertical-align: middle;
   padding-right:10px;
-  width: 25%;
+  width: auto;
 }
 
 
