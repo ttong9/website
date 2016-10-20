@@ -10,23 +10,7 @@
         <meta name="author" content="">
 
         <title>Welcome to my world</title>
-		
-		<style>
-<!-- 			/* Paste this css to your style sheet file or under head tag */
-			/* This only works with JavaScript, 
-			if it's not present, don't show loader */ -->
-			.no-js #loader { display: none;  }
-			.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-			.se-pre-con {
-				position: fixed;
-				left: 0px;
-				top: 0px;
-				width: 100%;
-				height: 100%;
-				z-index: 9999;
-				background: url(Images/Preloader_2.gif) center no-repeat #fff;
-			}
-		</style>
+
 
 
         <!-- Bootstrap Core CSS -->
@@ -48,13 +32,6 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
-		<script language="javascript">
-			// Wait for window load
-			$(window).load(function() {
-				// Animate loader off screen
-				$(".se-pre-con").fadeOut("slow");;
-			});
-		</script>
         <script language="javascript">
 			document.onmousedown=disableclick;
 			status="Right Click Disabled";
@@ -90,7 +67,7 @@
 
     </head>
 
-    <body oncontextmenu="return false" id="page-top">
+    <body id="page-top">
 	
 	<!-- Paste this code after body tag -->
 	<div class="se-pre-con"></div>
@@ -148,15 +125,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h4>Let me introduce myself</h4>
+                        <h2>Let me introduce myself</h2>
                         <hr class="light">
                         
                         <div class="project-body-text-container">
-                  <div class="project-body-text-heading"><font size="2.0vw">I'm just a Midwestern girl with a Californian home, Chinese roots, Middle Eastern soul, and an African fire burning in my eyes.. </font></div>
+                  <!--<div class="project-body-text-heading"><font size="2.0vw">I'm just a Midwestern girl with a Californian home, Chinese roots, Middle Eastern soul, and an African fire burning in my eyes.. </font></div>-->
+                  <h3 class="section-subheading text-muted">I'm just a Midwestern girl with a Californian home, Chinese roots, Middle Eastern soul, and an African fire burning in my eyes.. </h3>
                   <br><BR />
                   <div class="project-body-text">
                     <img class="project-image-wrapper project-image" src="Images/ib_profile3.jpg"/>
-                    <font size="1.5vw">
+
                     <p>
                       Hi, my name is Tiffany Tong.  I was born in Milwaukee, WI and have the foam cheesehead to prove it!  I am the only child of parents who met in the midwest after immigrating from Hong Kong and Taiwan.  I loved Milwaukee but wanted the challenge of life in a big city so headed to UCLA for college.  Soon after, my parents moved out to Los Angeles to follow me and the better weather.  After graduation, I went straight into the PhD program at Princeton University.
 
@@ -173,7 +151,7 @@
 
                     But as much as I am driven by work that I am passionate about, I also value having time to pursue my hobbies and other interests.  I love travel and there are few things that I love more than exploring a new neighborhood, trying a new cuisine, or learning how to laugh in a different language.  Through my journeys, I have also cultivated a passion for street photography and music and have showcased a number of my photos and mixtapes on this site.  I hope you enjoy and can learn a little bit about me as you browse around!
                     </p>
-                    </font>
+
                     <img class="project-image-wrapper project-image" src="Images/ib_profile2.jpg"/>
                   </div>
                 </div>
@@ -412,9 +390,10 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Contact</h2>
+                        <h4>Available for photo shoots or DJ bookings<br /> <br/>
                         <BR />
                                       
-                                            <h4>USA | UAE <br /> <br/>
+                                            <h4>USA | UAE <br /> <br/> <br/>
                                            
                                            <a href="Download/Tong_Resume_download.pdf"><i class="fa fa-download"></i> CV</a><br />
 										   <a href="https://www.linkedin.com/in/tiffanymtong"><i class="fa fa-linkedin"></i></a> LinkedIn<br />
@@ -1048,13 +1027,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-container">
+            <div class="project-container">
                 <div class="project-container-heading">CTED</div>
                 <div class="project-body-container">
                     <div class="project-body-heading">The Center for Technology and Economic Development</div>
                     <br><BR /><BR /><BR />
                     <div class="project-body-text-container">
-                        <div class="project-body-text-heading">When computer science meets development economics</div>
+                        <h3 class="section-subheading text-muted gallery-heading">When computer science meets development economics</h3>
                         <BR /><BR />
 
 
@@ -1086,8 +1065,7 @@
                 </div>
             </div>
         </div>
-    </div>
-	
+	</div>
 	
 	
 	<div class="portfolio-modal modal fade" id="portfolioSTEP" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1098,13 +1076,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-container">
+            <div class="project-container">
                 <div class="project-container-heading">The Solar Lantern Project</div>
         <div class="project-body-container">
-          <div class="project-body-heading">OFF-GRID SOLAR | TECHNOLOGY FOR DEVELOPING REGIONS</div>
+            <div class="project-body-heading">OFF-GRID SOLAR | TECHNOLOGY FOR DEVELOPING REGIONS</div>
           <br><BR /><BR /><BR />
           <div class="project-body-text-container">
-            <div class="project-body-text-heading">Over 1 billion people lack reliable access to electricity</div>
+              <h3 class="section-subheading text-muted gallery-heading">Over 1 billion people lack reliable access to electricity</h3>
             <br><BR />
             <div class="project-body-text">
               <p>
@@ -1193,13 +1171,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-container">
+            <div class="project-container">
                 <div class="project-container-heading">The Camel Fridge Project</div>
         <div class="project-body-container">
           <div class="project-body-heading">OFF-GRID SOLAR | TECHNOLOGY FOR DEVELOPING REGIONS</div>
           <br><BR /><BR /><BR />
           <div class="project-body-text-container">
-            <div class="project-body-text-heading">CAMELS THAT SAVE LIVES</div>
+              <h3 class="section-subheading text-muted gallery-heading">CAMELS THAT SAVE LIVES</h3>
             <br><BR />
             <div class="project-body-text">
               <img class="project-image-wrapper project-image" src="Photos/Research/TDR/TDR_017.jpg"/>
@@ -1243,13 +1221,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-container">
+            <div class="project-container">
                <div class="project-container-heading">Phones with Soul</div>
         <div class="project-body-container">
-          <div class="project-body-heading">Mobile phones tailored to the African market</div>
+            <div class="project-body-heading">Mobile phones tailored to the African market</div>
           <br><BR /><BR /><BR />
           <div class="project-body-text-container">
-            <div class="project-body-text-heading">A brief glimpse into the mobile handset industry</div>
+              <h3 class="section-subheading text-muted gallery-heading">A brief glimpse into the mobile handset industry</h3>
             <BR /><BR />
             <div class="project-body-text">
               <p>
@@ -1290,13 +1268,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-container">
+            <div class="project-container">
                 <div class="project-container-heading">UNIDO</div>
         <div class="project-body-container">
           <div class="project-body-heading">The United Nations Industrial Development Organization</div>
           <br><BR /><BR /><BR />
           <div class="project-body-text-container">
-            <div class="project-body-text-heading">Sustainable Energy For All</div>
+              <h3 class="section-subheading text-muted gallery-heading">Sustainable Energy For All</h3>
             <BR /><BR />
             <div class="project-body-text">
               <img class="project-image-wrapper project-image-small" src="Photos/Research/UNIDO/UNIDO_002.png"/><BR/><BR/>
@@ -1345,13 +1323,13 @@
                     </div>
                 </div>
             </div>
-            <div class="gallery-container">
+            <div class="project-container">
                         <div class="project-container-heading">em[POWER] Energy Group</div>
         <div class="project-body-container">
           <div class="project-body-heading">Revitalizing landfill communities through renewable income-generating opportunities</div>
           <br><BR /><BR /><BR />
           <div class="project-body-text-container">
-            <div class="project-body-text-heading">From Wasteland to Homeland</div>
+              <h3 class="section-subheading text-muted gallery-heading">From Wasteland to Homeland</h3>
             <BR /><BR />
             <div class="project-body-text">
                 <img class="project-image-wrapper project-image" src="Photos/Research/emPOWER/emPOWER_014.jpg"/>

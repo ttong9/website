@@ -258,7 +258,7 @@ margin-bottom: 0;
 padding-top:40%;
   line-height: 1.3em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #ffffff;
   text-shadow: none;
 }
@@ -298,7 +298,7 @@ padding-top:40%;
   height: 300px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #ffffff;
   text-shadow: none;
 }
@@ -336,9 +336,17 @@ padding-top:40%;
   letter-spacing: 0.1em;
   color: #ffffff;
   text-shadow: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
+
+.gallery-heading{
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 75px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic
+}
 
 
 
@@ -421,7 +429,7 @@ padding-top:40%;
   vertical-align: middle;
   line-height: 1.3em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #ffffff;
   text-shadow: none;
 }
@@ -457,15 +465,16 @@ padding-top:40%;
 .project-container-heading{
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 5.8vw;     /* for short ones, 152px is nice; squarespace: 52px */
+  font-size: 152px;     /* for short ones, 152px is nice; squarespace: 52px; also good: 5.8vw */
   text-align: center;
   padding-top: 0;
-  height: 300px;
+  min-height: 300px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #ffffff;
   text-shadow: none;
+
 }
 
 
@@ -480,12 +489,12 @@ padding-top:40%;
 .project-body-heading{
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 2vw;     /* 25px is also nice */
+  font-size: 52px;     /* 25px is also nice, also good: 2vw */
   text-align: center;
   padding-top: 0;
   line-height: 2.2em;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #ffffff;
   text-shadow: none;
 }
@@ -498,7 +507,7 @@ padding-top:40%;
 .project-body-text-heading{
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.5vw;     /* 20px is also nice */
+  font-size: 24px;     /* 1.5vw is also nice */
   text-align: center;
   padding-top: 0;
   line-height: 2.2em;
@@ -508,15 +517,14 @@ padding-top:40%;
 }
 
 .project-body-text{
-  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 1.3vw;     /* 15px is also nice */
+  /*font-size: 1.3vw;     !* 15px is also nice *!*/
   text-align: justify;
   padding-top: 0;
   height: 100%;
   width: 100%;
-  line-height: 2.4em;
-  letter-spacing: 0.07em;
+  /*line-height: 2.4em;*/
   text-transform: none;
   color: #bbbbbb;
   text-shadow: none;
@@ -564,7 +572,7 @@ padding-top:40%;
   letter-spacing: 0.1em;
   color: #bbbbbb;
   text-shadow: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 
@@ -592,7 +600,7 @@ padding-top:40%;
   display: table;
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 18px;
   text-decoration: none;
   text-shadow:none;
 
