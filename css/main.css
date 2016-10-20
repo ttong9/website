@@ -84,7 +84,7 @@ body {
 
 /*decorative site background*/
 .background-main {    
-  background-image: url(Images/background_home.jpg);
+  background-image: url(../Images/background_home.jpg);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
@@ -185,7 +185,7 @@ margin-bottom: 0;
     padding-left: 0px;
     min-height: 700px;
     width: 100%;
-    background-color: rgba(29,25,25);
+    background-color: rgba(29,25,25,100);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left top;
@@ -198,27 +198,27 @@ margin-bottom: 0;
 
 
 .portal-portfolio-africa{
-    background-image: url(Images/ib_africa.jpg);
+    background-image: url(../Images/ib_africa.jpg);
 }
 
 .portal-portfolio-asia{
-    background-image: url(Images/ib_asia.jpg);
+    background-image: url(../Images/ib_asia.jpg);
 }
 
 .portal-portfolio-america{
-    background-image: url(Images/ib_america.jpg);
+    background-image: url(../Images/ib_america.jpg);
 }
 
 .portal-portfolio-europe{
-    background-image: url(Images/ib_europe.jpg);
+    background-image: url(../Images/ib_europe.jpg);
 }
 
 .portal-portfolio-iphone{
-    background-image: url(Images/ib_iphone.jpg);
+    background-image: url(../Images/ib_iphone.jpg);
 }
 
 .portal-portfolio-mideast{
-    background-image: url(Images/ib_mideast.jpg);
+    background-image: url(../Images/ib_mideast.jpg);
 }
 .portal-portfolio:hover {
     opacity: 1;
@@ -327,7 +327,6 @@ padding-top:40%;
 .gallery-image-caption{
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-weight: normal;
-   font-style: narrow;
   font-size: 20px;
   padding-top:30px;
   padding-bottom: 30px;
@@ -359,7 +358,7 @@ padding-top:40%;
     padding-left: 0px;
     min-height: 700px;
     width: 100%;
-    background-color: rgba(29,25,25);
+    background-color: rgba(29,25,25,100);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left top;
@@ -370,31 +369,27 @@ padding-top:40%;
 
 
 .portal-project-cted{
-    background-image: url(Images/ib_cted.jpg);
+    background-image: url(../Images/ib_cted.jpg);
 }
 
 .portal-project-tdr{
-    background-image: url(Images/ib_tdr.jpg);
+    background-image: url(../Images/ib_tdr.jpg);
 }
 
 .portal-project-step{
-    background-image: url(Images/ib_step.jpg);
+    background-image: url(../Images/ib_step.jpg);
 }
 
 .portal-project-soul{
-    background-image: url(Images/ib_soul.jpg);
+    background-image: url(../Images/ib_soul.jpg);
 }
 
 .portal-project-unido{
-    background-image: url(Images/ib_unido.jpg);
-}
-
-.portal-project-usami{
-    background-image: url(Images/ib_usami.jpg);
+    background-image: url(../Images/ib_unido.jpg);
 }
 
 .portal-project-publications{
-    background-image: url(Images/ib_publications.jpg);
+    background-image: url(../Images/ib_publications.jpg);
 }
 
 
@@ -560,7 +555,6 @@ padding-top:40%;
 .project-image-caption{
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-weight: normal;
-   font-style: narrow;
   font-size: 1vw;     /* 15px is also nice */
   padding-top:10px;
   padding-bottom: 30px;
@@ -651,27 +645,32 @@ padding-top:40%;
  */
 
 @media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot{
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+
+    /* Handle the widths */
+    .masthead,
+    .mastfoot {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
 
 @media (min-width: 992px) {
   .masthead,
