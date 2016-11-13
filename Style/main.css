@@ -690,7 +690,7 @@ padding-top:40%;
   font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-weight: normal;
    font-style: narrow;
-  font-size: 1vw;     /* 15px is also nice */
+  font-size: 20px;     /* 1vw is also nice */
   padding-top:10px;
   padding-bottom: 30px;
   text-align: center;
