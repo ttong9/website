@@ -4613,6 +4613,16 @@ select[multiple].input-group-sm > .form-control, select[multiple].input-group-sm
     line-height: 20px
 }
 
+@media (max-width: 880px) {
+.navbar-brand {
+  font-size: 10px;
+    font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+		  line-height: 1.3em;
+  }
+}
+
+
 .navbar-brand:focus, .navbar-brand:hover {
     text-decoration: none
 }

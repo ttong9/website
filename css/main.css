@@ -520,7 +520,6 @@ padding-top:40%;
   font-family: proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   /*font-size: 1.3vw;     !* 15px is also nice *!*/
-  text-align: justify;
   padding-top: 0;
   height: 100%;
   width: 100%;
@@ -529,10 +528,10 @@ padding-top:40%;
   color: #bbbbbb;
   text-shadow: none;
 }
+  /*text-align: justify;*/
 
 
-
-
+  
 .project-image-wrapper{
     padding-right: 0px;
     padding-left: 0px;
@@ -561,9 +560,9 @@ padding-top:40%;
 
 
 .project-image-caption{
-  font-family: "bebas neue", proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: proxima-nova, "Gotham SSn A", "Gotham SSn B", "Gotham SSn", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
    font-weight: normal;
-  font-size: 1vw;     /* 15px is also nice */
+  font-size: 15px;     /* 1vw is also nice */
   padding-top:10px;
   padding-bottom: 30px;
   text-align: center;
@@ -572,7 +571,7 @@ padding-top:40%;
   letter-spacing: 0.1em;
   color: #bbbbbb;
   text-shadow: none;
-    /*text-transform: uppercase;*/
+  font-style: italic;
 }
 
 
@@ -652,6 +651,8 @@ padding-top:40%;
  * Affix and center
  */
 
+ 
+ /*for screens larger than the min-width*/
 @media (min-width: 768px) {
     /* Pull out the header and footer */
     .masthead {
@@ -680,6 +681,8 @@ padding-top:40%;
     }
 }
 
+
+/*for screens larger than the min-width*/
 @media (min-width: 992px) {
   .masthead,
   .mastfoot {
@@ -691,23 +694,57 @@ padding-top:40%;
   }
 }
 
+
+/*for mobile devices i.e. small screens smaller than the max-width*/
 @media (max-width: 880px) {
 
-  .footer-distributed{
-    font: bold 14px sans-serif;
+
+.project-container-heading{
+font-size: 52px;
+  line-height: 1.3em;
+}
+
+.project-body-heading{
+font-size: 36px;  
+line-height: 1.3em;
+}
+
+.project-image-caption{
+font-size: 12px;
+    font-family: sans-serif;
+	    font-style: italic;
+		  line-height: 1.3em;
+}
+
+
+.gallery-image-caption{
+    font-family: sans-serif;
+	    font-style: italic;
+		  line-height: 1.3em;
+}
+
+  .footer{
+  font-size: 10px;
+    font-family: sans-serif;
   }
 
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
+  .footer .copyright,
+  .footer .quote,
+  .footer .bav{
+
     margin-bottom: 40px;
     text-align: center;
+	  line-height: 1.3em;
   }
 
-  .footer-distributed .footer-center i{
+  .footer .quote i{
     margin-left: 0;
   }
 
 }
+
+
+
+
+
+  
